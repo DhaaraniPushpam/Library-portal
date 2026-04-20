@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Library Portal</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">My Profile</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h3>Filters</h3>
+
+    <label>Genre</label>
+    <select id="genreFilter">
+      <option value="All">All</option>
+      <option value="Fiction">Fiction</option>
+      <option value="Science">Science</option>
+      <option value="Technology">Technology</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="Non-fiction">Non-fiction</option>
+    </select>
+
+    <label>Availability</label>
+    <select id="availabilityFilter">
+      <option value="All">All</option>
+      <option value="Available">Available</option>
+      <option value="Not Available">Not Available</option>
+    </select>
+
+    <label>Author</label>
+    <input type="text" id="authorFilter" placeholder="Enter author name">
+
+    <label>Ref ID</label>
+    <input type="text" id="idFilter" placeholder="Enter reference ID">
+
+    <button onclick="applyFilters()">Submit</button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <h1>Library Portal</h1>
+
+    <!-- Add Book -->
+    <div class="form-container">
+      <h3>Add Book</h3>
+      <input type="text" id="title" placeholder="Title">
+      <input type="text" id="author" placeholder="Author">
+      <input type="text" id="genre" placeholder="Genre">
+      <input type="number" id="quantity" placeholder="Quantity">
+      <button onclick="addBook()">Add Book</button>
+    </div>
+    <div id="message" class="message"></div>
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Ref ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody id="bookTable"></tbody>
+    </table>
+    <div id="pagination" class="pagination"></div>
+  </main>
+
+</div>
+
+<footer>
+  <a href="#">Report Issue</a> |
+  <a href="#">Contact</a>
+  <p>Contact: library@portal.com | +91 9344267871</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial;
+  background: #e3edf3;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+.container h1{
+  text-align: center;
+}
+
+.sidebar {
+  width: 250px;
+  background: #cde9ef;
+  padding: 20px;
+}
+
+.sidebar input, .sidebar select, .sidebar button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.form-container {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.form-container input {
+  margin-right: 10px;
+  padding: 8px;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  background: #dff0d8;
+  color: #2e7d32;
+  display: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+
+footer {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  background: #2c3e50;
+  color: beige;
+}
+footer a {
+  color: beige;
+  text-decoration: none;
+}
+footer a:hover{
+  color: pink
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.page-btn {
+  margin-right: 5px;
+  background: #3498db;
+}
+
+.page-btn.active {
+  background: #2c3e50;
+}
